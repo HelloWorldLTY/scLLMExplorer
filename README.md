@@ -38,7 +38,16 @@ For deconvolution task, please use:
 python deconv_main.py
 ```
 
+For the usage of baseline models or evaluation, please refer the corresponding folders (**baseline** and **evaluation**)
+
 # Tutorial
 
 Please refer the notebook under the **tutorial** folder for running the codes of cell-type annotation task and deconvolution task, also the evaluation.
 
+# Copyright
+
+If you have questions, please contact Tianyu Liu or Zhiyuan Cao.
+
+tianyu.liu@yale.edu.
+
+zhiyuan.cao@yale.edu.

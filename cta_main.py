@@ -2,12 +2,13 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer, GPT2Config
 from transformers import TextDataset, DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
 
+import pytorch_lightning
+pytorch_lightning.seed_everything(0) # set seed.
 model_name,train_file, test_file, output_dir = "gpt2", "demo_train_input_ctdeconv.txt", "demo_test_input_ctdeconv.txt", "gpt2_annot"
 
 # Load GPT-2 model and tokenizer
 model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
-
 
 # Load training dataset
 train_dataset = TextDataset(
