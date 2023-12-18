@@ -9,7 +9,7 @@ adata_train = sc.read_h5ad("/gpfs/gibbs/pi/zhao/tl688/deconvdatasets/demo_train.
 adata_test = sc.read_h5ad("/gpfs/gibbs/pi/zhao/tl688/deconvdatasets/demo_test.h5ad")
 
 
-def generate_bulk(adata, pseudo_length=100, num_of_gene = 150):
+def generate_bulk(adata, pseudo_length=100, num_of_gene=150):
     question_list, answer_list = [], []
     for i in range(adata.shape[0]//pseudo_length):
         adata_group = adata[100*i:100*(i+1)]
