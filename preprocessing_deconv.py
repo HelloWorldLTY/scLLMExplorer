@@ -1,5 +1,6 @@
 import scanpy as sc
 import numpy as np
+import csv
 
 # modify for the path of the training dataset
 adata_train = sc.read_h5ad("/gpfs/gibbs/pi/zhao/tl688/deconvdatasets/demo_train.h5ad")
@@ -28,6 +29,9 @@ construct_test = {}
 construct_test['Q'] = question_list 
 construct_test['A'] = answer_list 
 
+with open('deconv_gt.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(answer_list)
 
 question_list = []
 answer_list = []
