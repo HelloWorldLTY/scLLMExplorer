@@ -29,7 +29,7 @@ construct_test = {}
 construct_test['Q'] = question_list 
 construct_test['A'] = answer_list 
 
-with open('deconv_gt.csv', 'w', newline='') as file:
+with open('evaluation/deconv_gt.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(answer_list)
 
