@@ -44,6 +44,10 @@ For the usage of baseline models or evaluation, please refer the corresponding f
 
 Please refer the notebook under the **tutorial** folder for running the codes of cell-type annotation task and deconvolution task, also the evaluation.
 
+# Datasets
+
+For the demo datasets, please use this [link](https://drive.google.com/drive/folders/1s9XjcSiPC-FYV3VeHrEa7SeZetrthQVV) to download.
+
 # Copyright
 
 If you have questions, please contact Tianyu Liu or Zhiyuan Cao.
